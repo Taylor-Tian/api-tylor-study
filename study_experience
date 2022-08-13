@@ -24,3 +24,6 @@ cd进入根目录
 在运行react框架时：
 当cd my-app 后运行npm start 报错Error: getaddrinfo ENOTFOUND x86_64-apple-darwin13.4.0 后
 需要再my-app 文件下运行unset HOST 之后不要关闭终端，继续在my-app下运行npm start 才会成功
+
+在运行npm install 报错gyp ERR! stack Error: `make` failed with exit code: 2：
+删除package-lock.json 之后再次运行npm install
