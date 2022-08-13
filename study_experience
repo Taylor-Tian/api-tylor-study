@@ -19,3 +19,8 @@ cd进入根目录
 > -H "Content-Type: application/json" \
 > --data '{"query":"{notes{id}}"}' \
 > https://warm-fjord-75067.herokuapp.com/api进行在线测试
+
+
+在运行react框架时：
+当cd my-app 后运行npm start 报错Error: getaddrinfo ENOTFOUND x86_64-apple-darwin13.4.0 后
+需要再my-app 文件下运行unset HOST 之后不要关闭终端，继续在my-app下运行npm start 才会成功
