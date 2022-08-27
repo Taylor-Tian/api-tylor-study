@@ -27,3 +27,24 @@ cd进入根目录
 
 在运行npm install 报错gyp ERR! stack Error: `make` failed with exit code: 2：
 删除package-lock.json 之后再次运行npm install
+
+国内安装homebrew：/bin/zsh -c "$(curl -fsSL https://gitee.com/cunkai/HomebrewCN/raw/master/Homebrew.sh)"
+
+安装成功之后先运行brew doctor按照提示进行修改后再重启终端
+
+安装MongoDB：
+brew tap mongodb/brew(如果遇到错误brew doctor）
+brew install mongodb-community@4.2
+brew services start mongodb-community@4.2
+
+配置MongoDB命令行：
+打开新终端键入：brew list
+brew list mongodb-community@4.4 （注意复制这里显示的bin目录）
+新打开一个终端键入：echo $SHELL 如果显示/bin/zsh
+则键入：vim ~/.zshrc
+之后点击键盘上的i键
+黏贴：export PATH="上一个bin目录的路径:${PATH}"
+点击键盘esc，之后键入：wq（冒号不能少）
+关闭前两个终端，重新打开一个终端，键入mongo查看是否正确
+
+
