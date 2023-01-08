@@ -56,5 +56,13 @@ conda env create -f environment.yml
 conda activate 环境名称
 python安装一系列包
 
+设置.env文件：
+echo "export 变量名='变量值'" >> ~/.env
+
+激活.env设置：
+source ~/.env
+
+确认变量设置成功：
+echo $变量名
 
 
